@@ -1,0 +1,440 @@
+/* commnd code  stard  here*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    outline: 0;
+    font-weight: 400;
+}
+html{
+    background-color: #a98b8b;
+    scroll-behavior: smooth;
+    font-size: 62%;
+    font-family: "Roboto"sans-serif;
+}
+body{
+    background-color: #fff;
+    width: 100rem;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: .4rem .4rem.4rem #211d1d,
+    -4rem 0rem  .4rem #c4c4c4;
+}
+
+.bnt{
+    background-color: rgb(85, 0, 255);
+    color: #fff;
+    padding: .8rem;
+    border: none;
+    border-radius: 1.9rem;
+}
+
+.text--write{
+    color: #fff;
+}
+.text--justify{
+    text-align: justify;
+}
+.section_heading{
+    background-color: rgb(189, 92, 92);
+    font-size: 3rem;
+    padding: 1rem;
+    width: 30%;
+    text-align: center;
+    border-radius: 1.4rem 5rem;
+    box-sizing: .5rem .5rem .5rem rgb(76, 71, 71);
+    margin: 2rem;
+}
+
+.section_center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* common code end here*/
+
+/* headre code stard here*/
+header{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    padding: 2rem 1rem;
+    z-index: 10;
+    min-width: 5vh;
+    top: 0;
+    left: 0;
+    box-shadow: .4rem .4rem .4rem black;
+}
+#menu__icon{
+    display: none;
+}
+.logo-figure{
+    border: 4px solid black;
+
+}
+.logo{
+    font-size: 3rem;
+}
+nav ul{
+    display: flex;
+    gap: 2rem;
+}
+.nav__link{
+    font-size: large;
+    color: black;
+    cursor: pointer;
+    padding: .6rem;
+    transition: all .4s linear;
+    border-radius: .8rem;
+    display: inline-block;
+    
+}
+.nav__link:hover{
+    background-color: black;
+    color: aliceblue;
+    transform: scale(1.1);
+}
+/* header code end here*/
+
+
+
+/* Bannar code stard here*/
+.bannar{
+    background-color: rgb(124, 205, 205);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    margin: 1rem;
+    min-height: 70vh;
+    
+}
+.bannar article{
+    flex-basis: 50%;
+    margin: 1rem;
+    text-align: center;
+}
+.bannar aside{
+    flex-basis: 50%;
+    text-align: center;
+}
+.bannar_heading{
+    background-color: rgb(0, 255, 72);
+    display: inline-block;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+    padding: 1rem;
+    font-size: 3rem;
+    text-align: center;
+    width: 70%;
+    border-radius: 1.8rem 6rem;
+}
+
+.bannar_decription{
+    font-size: 1.8rem;
+}
+
+.bannar_img{
+    text-align: center;
+    height: 328px;
+    border-radius: 0rem 6rem;
+}
+/* bannar code end here*/
+
+
+/* about me code end here*/
+.blog_about{
+    background-color: rgb(31, 29, 33);
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+       
+}
+.card{
+    background-color:rgb(212, 151, 151);
+    padding: 3rem 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    gap: 1rem;
+    border-radius: 1rem;
+    box-shadow: .5rem .5rem .5rem rgb(68, 66, 60);
+
+}
+.card_header{
+    font-size: 2.2rem;
+}
+.card_decription{
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.card__bnt{
+    width: 80%;
+}
+/* about me code end here*/
+
+/* Archives code stard here*/
+
+
+.archive_continar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    border-top: .2rem solid;
+    border-bottom:.2rem solid ;
+    
+}
+.archive__img{
+    width: 100%;
+    height: 100%;
+    border-radius: .4rem;
+    transition: all .4s linear;
+
+}
+.archive__img:hover{
+    transform: scale(1.1);
+    box-shadow: .1rem .1rem .3rem rgb(85, 22, 22),
+    -.1rem 0rem .3rem rgb(150, 58, 58);
+}
+.archive_lists{
+    display: flex;
+    text-align: center;
+    gap: 2rem;
+
+}
+/* Archives code end here*/
+
+/* Blog post code stard here*/
+
+
+.blog__post{
+    display: flex;
+    width: 70%;
+    margin: 3rem 0rem;
+    transition: all .3s linear;
+}
+.blog__post:hover{
+    transform: scale(1.1);
+}
+.blog__post__heading{
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+}
+.blog__post__sub__heading{
+    font-size: 2rem;
+}
+
+
+.blog__post__aside{
+    flex: 1;
+}
+.blog__post__contanear{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0rem 1.6rem;
+    margin-left: 2rem;
+    font-size: 1.4rem;
+    gap: .6rem;
+
+}
+.blog__post__bnt{
+    width: 40%;
+    border-radius: 2rem;
+}
+/* bloge post code end here*/
+
+/*  CONTACT code stard here*/
+#contact__section{
+    background-color: rgb(151, 222, 222);
+    min-height: 70vh;
+
+}
+.form__control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.6rem;
+}
+.form__control label{
+    font-size: 1.5rem;
+    flex: .3;
+
+}
+.form__control input,textarea{
+    width: 40%;
+    flex: .7;
+    border: none;
+    border-radius: .6rem;
+    
+}
+textarea{
+    resize: none;
+    height: 10vh;
+}
+.form__but__field{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.contact__bnt{
+    width: 30%;
+    
+}
+form{
+    box-shadow: .3rem .3rem .5rem #211d1d,
+    -.3rem -.3rem .5rem #1d1c1c;
+    padding: 1.6rem;
+   
+}
+/*  CONTACT code end here*/
+
+/* footer code stard here */
+.footer__section{
+    background-color:  aquamarine;
+    min-height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+.copy__text{
+    font-size: 1.2rem;
+}
+.footer__icon{
+    font-size: large;
+}
+.footer__nav{
+    display: flex;
+    gap: 1.6rem;
+}
+.footer__link{
+    color: black;
+}
+
+/* footer code end here */
+
+/* respionsivenes code stard here*/
+@media screen and( max-width:992px) {
+    
+}
+@media screen and( max-width:768px) {
+    html{
+        font-size: 55%;
+    } 
+     .bannar{
+      
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+      
+    }
+    .bannar_decription{
+       font-size: large;
+
+    }
+    .cards{
+        width: 80%;
+    }
+    #archive{
+        min-height: auto;
+
+    }
+    .blog__post{
+        width: 80%;
+        flex-direction: column;
+
+    }
+    #contact__section{
+        min-height: auto;
+
+    }
+    
+
+}
+@media screen and ( max-width:660px) {
+    header{
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    html{
+        font-size: 48%;
+    }
+    .bannar{
+        flex-direction: column;
+        text-align:center;
+        gap: 2rem;
+        min-width: auto;
+       min-height: auto;
+
+      
+    }
+    .bannar_decription{
+        font-size: 2rem;
+
+    }
+    .cards{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .archive_lists{
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 90%;
+    }
+    .blog__post{
+        flex-direction: column;
+        width: 100%;
+    
+        
+    }
+    .form__control{
+        flex-direction: column;   
+    }
+    .form__control input,textarea{
+    margin-top: .6rem;
+    }
+    .footer__section{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .hidden{
+        display: none;
+    }
+    #menu__icon{
+        display: block;
+        text-align: center;
+        margin: 1rem 0rem;
+        cursor: pointer;
+    }
+}
+/* respionsivenes code end here*/
+ 
+
+
+
+
+
+
+
